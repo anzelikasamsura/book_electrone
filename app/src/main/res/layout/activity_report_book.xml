@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    style="@style/MarginApp"
+    tools:context=".ReportBookActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout style="@style/HEADER" >
+            <TextView
+                android:text="@string/book_report_label"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                style="@style/HeadingStyle" />
+            <ImageButton
+                android:layout_gravity="center|left"
+                android:id="@+id/backButton"
+                style="@style/BUTTON_MINI"
+                android:src="@drawable/arrow_button_24" />
+        </FrameLayout>
+
+        <View style="@style/SEPARATOR"/>
+
+        <ScrollView
+            android:id="@+id/settings_items"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="8dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/book_name"
+                    android:text="@string/name_book_open"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    style="@style/HeadingStyle" />
+
+                <LinearLayout
+                    android:layout_marginVertical="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:text="@string/book_cover_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        style="@style/TextStyle" />
+                    <ImageView
+                        android:id="@+id/image_user"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/book" />
+                </LinearLayout>
+
+
+                <View style="@style/SEPARATOR"
+                    android:layout_marginVertical="8dp"/>
+
+
+                <LinearLayout
+                    android:layout_marginVertical="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginVertical="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:text="@string/path_to_file_label"
+                            style="@style/BOOK_INFO_LABEL"/>
+                        <TextView
+                            android:id="@+id/path"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextStyle"
+                            android:hint="@string/path_to_file_label" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginVertical="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:text="@string/collection_label"
+                            style="@style/BOOK_INFO_LABEL"/>
+                        <ImageView
+                            android:id="@+id/image_collection"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/collection" />
+                        <TextView
+                            android:id="@+id/collection_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextStyle"
+                            android:hint="@string/name_label" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginVertical="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:text="@string/number_of_pages_label"
+                            style="@style/BOOK_INFO_LABEL"/>
+                        <TextView
+                            android:id="@+id/count_page"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextStyle"
+                            android:hint="@string/number_of_pages_label" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginVertical="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:text="@string/page_format"
+                            style="@style/BOOK_INFO_LABEL"/>
+                        <TextView
+                            android:id="@+id/format_page"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextStyle"
+                            android:hint="@string/page_format" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginVertical="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:text="@string/document_format_label"
+                            style="@style/BOOK_INFO_LABEL"/>
+                        <TextView
+                            android:id="@+id/format_document"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextStyle"
+                            android:hint="@string/document_format_label" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View style="@style/SEPARATOR"
+                    android:layout_marginVertical="8dp"/>
+
+                <LinearLayout
+                    android:layout_marginVertical="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginVertical="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:text="@string/number_of_bookmarks_label"
+                            style="@style/BOOK_INFO_LABEL"/>
+                        <TextView
+                            android:id="@+id/bookmarks_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextStyle"
+                            android:hint="" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:visibility="visible"
+                        android:id="@+id/bookmarks_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        style="@style/TextStyle"
+                        android:hint="@string/list_is_empty_label" />
+
+                    <LinearLayout
+                        android:id="@+id/bookmarks_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!-- Список закладок -->
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <View style="@style/SEPARATOR"
+                    android:layout_marginVertical="8dp"/>
+
+
+                <Button
+                    android:id="@+id/button_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:paddingHorizontal="80dp"
+                    android:text="@string/close_label"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

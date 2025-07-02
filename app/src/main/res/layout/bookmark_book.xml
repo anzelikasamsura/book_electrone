@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="76dp"
+    android:layout_height="36dp"
+    android:orientation="vertical"
+    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+    android:id="@+id/bookmark" >
+
+    <ImageView
+        android:id="@+id/colorBookmark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="#FFC107">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:text="@string/header_in_header"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="4dp"
+        android:textStyle="bold"
+        style="@style/CardTextStyle" />
+
+    <View
+        android:id="@+id/touchOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"/>
+
+</FrameLayout>

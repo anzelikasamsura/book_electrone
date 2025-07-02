@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    style="@style/MarginApp"
+    tools:context=".BookOpenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/HEADER"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                style="@style/BUTTON_MINI"
+                android:src="@drawable/arrow_button_24" />
+
+            <TextView
+                android:id="@+id/labelNameBook"
+                android:text="@string/name_book_open"
+                android:layout_marginHorizontal="0dp"
+                style="@style/HeadingStyle" />
+
+            <ImageButton
+                android:id="@+id/other_button"
+                style="@style/BUTTON_MINI"
+                android:src="@drawable/point_menu_button_24" />
+
+        </LinearLayout>
+
+
+        <View style="@style/SEPARATOR"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:id="@+id/layout_content_book"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:id="@+id/bookmarkPanel"
+                    android:layout_width="76dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    android:background="#0D818181">
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <ImageButton
+                android:id="@+id/favorite_button"
+                style="@style/BUTTON_MINI"
+                android:layout_gravity="start|bottom"
+                android:layout_margin="20dp"
+                android:src="@drawable/favorite_button_24" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

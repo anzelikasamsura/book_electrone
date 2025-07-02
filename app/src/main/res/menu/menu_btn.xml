@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/collectionsFragment"
+        android:title="@string/collection_label"
+        android:icon="@drawable/baseline_folder_24"
+        android:layout_margin="0dp"
+        android:padding="0dp"/>
+    <item
+        android:id="@+id/bookmarksFragment"
+        android:title="@string/bookmarks_label"
+        android:icon="@drawable/favorite_button_24"
+        android:layout_margin="0dp"
+        android:padding="0dp"/>
+    <item
+        android:id="@+id/homeFragment"
+        android:title="@string/home_label"
+        android:icon="@drawable/baseline_home_24"
+        android:layout_margin="0dp"
+        android:padding="0dp"/>
+    <item
+        android:id="@+id/testsFragment"
+        android:title="@string/test"
+        android:icon="@drawable/notepad_icon_24"
+        android:layout_margin="0dp"
+        android:padding="0dp"/>
+    <item
+        android:id="@+id/settingsFragment"
+        android:title="@string/settings_label"
+        android:icon="@drawable/baseline_settings_24"
+        android:layout_margin="0dp"
+        android:padding="0dp"/>
+</menu>

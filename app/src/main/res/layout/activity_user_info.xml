@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    style="@style/MarginApp"
+    tools:context=".UserInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout style="@style/HEADER" >
+            <ImageButton
+                android:layout_gravity="center|left"
+                android:id="@+id/backButton"
+                style="@style/BUTTON_MINI"
+                android:src="@drawable/arrow_button_24" />
+            <TextView
+                android:text="@string/user_label"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                style="@style/HeadingStyle" />
+        </FrameLayout>
+
+        <View style="@style/SEPARATOR"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/Frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/image_user"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp" />
+
+                    <ImageButton
+                        android:id="@+id/button_image"
+                        style="@style/BUTTON_MINI"
+                        android:layout_gravity="bottom|end"
+                        android:src="@drawable/edit_icon"/>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:text="@string/login_label"
+                            style="@style/USER_INFO_LABEL"/>
+                        <EditText
+                            android:id="@+id/edit_login"
+                            style="@style/EDIT_TEXT"
+                            android:hint="@string/login_label"
+                            android:inputType="text"
+                            android:enabled="false" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:text="@string/password_label"
+                            style="@style/USER_INFO_LABEL"/>
+                        <EditText
+                            android:id="@+id/edit_password"
+                            style="@style/EDIT_TEXT"
+                            android:hint="@string/password_label"
+                            android:inputType="textPassword"
+                            android:enabled="false" />
+                        <CheckBox
+                            android:id="@+id/password_show"
+                            android:layout_marginEnd="10dp"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:text="@string/name_p_label"
+                            style="@style/USER_INFO_LABEL"/>
+                        <EditText
+                            android:id="@+id/edit_name"
+                            style="@style/EDIT_TEXT"
+                            android:hint="@string/name_p_label"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:text="@string/email_label"
+                            style="@style/USER_INFO_LABEL"/>
+                        <EditText
+                            android:id="@+id/edit_email"
+                            style="@style/EDIT_TEXT"
+                            android:hint="@string/email_label"
+                            android:inputType="textEmailAddress" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:paddingHorizontal="80dp"
+                    android:text="@string/save_label"/>
+
+                <View style="@style/SEPARATOR"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp" >
+
+                    <TextView
+                        android:id="@+id/button_logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/CardHeadingStyle"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/logout_label"/>
+
+                    <TextView
+                        android:id="@+id/button_delete_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/CardHeadingStyle"
+                        android:layout_marginTop="16dp"
+                        android:textColor="#F44336"
+                        android:text="@string/delete_account_label"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

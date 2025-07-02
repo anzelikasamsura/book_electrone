@@ -1,0 +1,190 @@
+<resources>
+    <string name="app_name">BookElectrone</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Первый фрагмент</string>
+    <string name="second_fragment_label">Второй фрагмент</string>
+    <string name="next">Следующий</string>
+    <string name="previous">Предыдущий</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+
+    <string name="settings_information">
+        Разработчик: тг @shnupikzxc \n
+        Версия 1.0 (278)
+    </string>
+    <string name="app_version_string">Версия 1.0 (278)</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Привет, пустой фрагмент</string>
+
+    <string name="name_book_open">Название книги</string>
+    <string name="name_label">Название</string>
+    <string name="description_label">Описание</string>
+    <string name="text_item">Текст</string>
+
+    <string name="header_in_header">Заголовок</string>
+    <string name="search_in_header">Поиск…</string>
+
+    <string name="home_label">Главная</string>
+    <string name="collections_label">Сборники</string>
+    <string name="bookmarks_label">Закладки</string>
+
+    <string name="settings_label">Настройки</string>
+    <string name="dark_mode_label">Темная тема:</string>
+    <string name="font_label">Шрифт:</string>
+    <string name="report_label">Отчеты:</string>
+    <string name="generate_label">Сформировать</string>
+
+    <string name="change_label">Изменить</string>
+    <string name="set_image_label">Установить изображение</string>
+    <string name="add_to_collection_label">Добавить в коллекцию</string>
+
+    <string name="delete_label">Удалить</string>
+
+    <string name="user_label">Пользователь</string>
+    <string name="login_label">Логин</string>
+    <string name="password_label">Пароль</string>
+    <string name="email_label">Почта</string>
+    <string name="save_label">Сохранить</string>
+    <string name="logout_label">Выйти</string>
+    <string name="delete_account_label">Удалить аккаунт</string>
+
+    <string name="book_report_label">Отчет по книге</string>
+    <string name="book_cover_label">Обложка</string>
+    <string name="path_to_file_label">Путь до файла</string>
+    <string name="collection_label">Сборник</string>
+    <string name="number_of_pages_label">Количество страниц</string>
+    <string name="page_format">Формат страницы</string>
+    <string name="document_format_label">Формат документа</string>
+    <string name="number_of_bookmarks_label">Количество закладок:</string>
+    <string name="list_is_empty_label">Список пуст</string>
+    <string name="close_label">Закрыть</string>
+
+    <string name="registration_label">Регистрация</string>
+    <string name="i_already_have_an_account_label">У меня уже есть аккаунт</string>
+    <string name="register_label">Зарегистрироваться</string>
+    <string name="authorization_label">Авторизация</string>
+    <string name="i_dont_have_an_account_label">У меня нет аккаунта</string>
+    <string name="login_in_label">Войти</string>
+
+    <string name="please_wait_label">Пожалуйста, подождите…</string>
+    <string name="error_empty_response_label">Ошибка: получен пустой ответ от сервера!</string>
+    <string name="successfully_label">Успешно</string>
+    <string name="wrong_password_label">Вы ввели неверный пароль!</string>
+    <string name="error_label">" Ошибка! "</string>
+    <string name="error_processing_data_label">Ошибка обработки данных с сервера!</string>
+    <string name="no_internet_connect_label">Нет подключения к сети!</string>
+    <string name="delete_account_question_label">Вы уверены, что хотите удалить аккаунт? Это действие необратимо.\nДля подтверждения введите пароль:</string>
+    <string name="cancel_label">Отмена</string>
+    <string name="error_empty_field_label">Поле не может быть пустым</string>
+    <string name="logout_question_label">Вы уверены, что хотите выйти из аккаунта?</string>
+    <string name="you_logout_label">Вы вышли из аккаунта</string>
+
+    <string name="enter_correct_login_label">Введите корректный логин!</string>
+    <string name="enter_password_label">Введите пароль!</string>
+    <string name="enter_correct_name_label">Введите корректное имя!</string>
+    <string name="enter_correct_email_label">Введите корректную почту!</string>
+
+    <string name="select_a_book_label">Выберите книгу</string>
+    <string name="you_no_login_label">Вы не авторизованы!</string>
+    <string name="you_account_delete_label">Ваш профиль был удален!</string>
+    <string name="empty_label">Отсутствует</string>
+    <string name="failed_to_generate_report_label">Не удалось сформировать отчет</string>
+    <string name="error_login_exist_label">Такого логина не существует!</string>
+    <string name="login_or_email_already_label">Пользователь с таким логином или почтой уже существует!</string>
+    <string name="permission_not_granted_label">Разрешение не предоставлено</string>
+    <string name="select_collection_label">Выберите коллекцию</string>
+    <string name="enter_name_label">Введите название:</string>
+    <string name="failed_to_load_book_label">Не удалось загрузить книгу</string>
+    <string name="add_bookmark_label">Добавить закладку</string>
+    <string name="rename_book_label">Переименовать книгу</string>
+    <string name="go_to_page_label">Перейти на страницу</string>
+    <string name="go_to_bookmark_label">Перейти к закладке</string>
+    <string name="actions_label">Действия:</string>
+    <string name="enter_correct_page_label">Введите корректную страницу!</string>
+    <string name="enter_number_page_label">Введите номер страницы:</string>
+    <string name="enter_name_bookmark_label">Выберите закладку:</string>
+    <string name="ok_label">ОК</string>
+    <string name="confirm_action_label">Подтверждение действий</string>
+    <string name="you_confident_label">Вы уверены в своем решении?</string>
+    <string name="select_image_label">Выберите изображение</string>
+    <string name="other_label">Другое</string>
+
+    <string name="filter_label">Фильтрация по:</string>
+    <string name="update_bookmark_label">Изменение закладки</string>
+
+    <string name="a_z_label">А–Я</string>
+    <string name="z_a_label">Я–А</string>
+
+    <string name="language_label">Язык:</string>
+    <string name="russian_label">Русский</string>
+    <string name="english_label">English</string>
+
+    <string name="test">Тесты</string>
+    <string name="name_p_label">Имя</string>
+    <string name="download_material_label">Скачать материал:</string>
+    <string name="download_label">Скачать</string>
+    <string name="question_label">Вопрос</string>
+    <string name="further_label">Далее</string>
+    <string name="result_label">Результат</string>
+    <string name="true_results_label">Правильных ответов:</string>
+    <string name="from_label">" из "</string>
+    <string name="error_load_test_label">Не удалось загрузить тест</string>
+    <string name="warning_label">Предупреждение</string>
+    <string name="warning_test_label">Вы действительно хотите выйти из теста? Ваш текущий прогресс может быть потерян.</string>
+    <string name="tests_label">Тесты</string>
+    <string name="state_label">Статистика:</string>
+    <string name="take_test_label">Сначало пройдите тест</string>
+    <string name="passed_label">Пройден</string>
+    <string name="no_passed_label">Не пройден</string>
+    <string name="state_test_label">"Статус: "</string>
+    <string name="score_test_label">"Отметка: "</string>
+    <string name="test_again_label">Вы хотите пройти тест заново?</string>
+    <string name="login_or_register_label">Сначала зарегистрируйтесь/войдите в аккаунт!</string>
+    <string name="download_book_label">Скачать книгу</string>
+    <string name="download_book_ok_label">"Вы действительно хотите скачать книгу "</string>
+    <string name="data_download_error_label">Ошибка получения данных!</string>
+    <string name="send_to_curator_label">Отправить куратору</string>
+    <string name="answer_true_label">Ответ верный</string>
+    <string name="answer_false_label">Ответ неверный</string>
+    <string name="select_answer_label">Пожалуйста, выберите вариант ответа</string>
+    <string name="page_label">стр</string>
+
+
+</resources>

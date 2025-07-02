@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    style="@style/MarginApp"
+    tools:context=".TestActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout style="@style/HEADER" >
+            <TextView
+                android:id="@+id/name_test_label"
+                android:text="@string/name_label"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                style="@style/HeadingStyle" />
+            <ImageButton
+                android:layout_gravity="center|start"
+                android:id="@+id/backButton"
+                style="@style/BUTTON_MINI"
+                android:src="@drawable/arrow_button_24" />
+        </FrameLayout>
+
+        <View style="@style/SEPARATOR"/>
+
+        <ScrollView
+            android:id="@+id/question_layout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:padding="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+                    <TextView
+                        android:id="@+id/progress_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question_label"
+                        android:textSize="12sp"
+                        android:textColor="?attr/colorAccent"/>
+                    <ProgressBar
+                        android:id="@+id/progress_bar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="10"
+                        android:progress="1"
+                        android:progressTint="?attr/colorAccent"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/question_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_label"
+                    android:textSize="20sp"
+                    android:padding="12dp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"/>
+                <LinearLayout
+                    android:id="@+id/answers_container"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/next_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/further_label"
+                    android:paddingHorizontal="48dp"
+                    android:layout_marginTop="16dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+        <ScrollView
+            android:id="@+id/result_layout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/result_label"
+                    android:textSize="20sp"
+                    android:padding="12dp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"/>
+                <LinearLayout
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="@string/true_results_label"
+                        style="@style/BOOK_INFO_LABEL"/>
+                    <TextView
+                        android:id="@+id/true_results"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextStyle"
+                        android:hint="" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="@string/score_test_label"
+                        style="@style/BOOK_INFO_LABEL"/>
+                    <TextView
+                        android:id="@+id/grade_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextStyle"
+                        android:hint="" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/logout_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logout_label"
+                    android:paddingHorizontal="48dp"
+                    android:layout_marginTop="16dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+        <ScrollView
+            android:id="@+id/question_answers_layout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:padding="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/review_container"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View style="@style/SEPARATOR"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/result_label"
+                    android:textSize="20sp"
+                    android:padding="12dp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"/>
+                <LinearLayout
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="@string/true_results_label"
+                        style="@style/BOOK_INFO_LABEL"/>
+                    <TextView
+                        android:id="@+id/true_results_q"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextStyle"
+                        android:hint="" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="@string/score_test_label"
+                        style="@style/BOOK_INFO_LABEL"/>
+                    <TextView
+                        android:id="@+id/grade_label_q"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextStyle"
+                        android:hint="" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/logout_button_q"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logout_label"
+                    android:paddingHorizontal="48dp"
+                    android:layout_marginTop="16dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

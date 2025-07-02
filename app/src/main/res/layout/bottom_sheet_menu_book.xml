@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/image_header"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/collection"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/header"
+            style="@style/ITEM_BOTTOM_MENU"
+            android:layout_width="wrap_content"
+            android:maxWidth="300sp"
+            android:layout_marginStart="2dp"
+
+            android:text="@string/name_label"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginVertical="8dp"
+        style="@style/SEPARATOR"
+        android:layout_marginHorizontal="0dp"/>
+
+
+    <TextView
+        android:id="@+id/action_card_rename"
+        style="@style/ITEM_BOTTOM_MENU"
+        android:text="@string/change_label" />
+
+    <TextView
+        android:id="@+id/action_card_image"
+        style="@style/ITEM_BOTTOM_MENU"
+        android:text="@string/set_image_label" />
+
+    <TextView
+        android:id="@+id/action_card_add_to_collection"
+        style="@style/ITEM_BOTTOM_MENU"
+        android:text="@string/add_to_collection_label"/>
+
+
+    <View
+        android:layout_marginVertical="8dp"
+        style="@style/SEPARATOR"
+        android:layout_marginHorizontal="0dp"/>
+
+
+    <TextView
+        android:id="@+id/action_card_delete"
+        style="@style/ITEM_BOTTOM_MENU"
+
+        android:textColor="#F44336"
+
+        android:text="@string/delete_label"/>
+
+
+</LinearLayout>

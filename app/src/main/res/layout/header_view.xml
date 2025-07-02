@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HEADER">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        style="@style/BUTTON_MINI"
+        android:visibility="gone"
+        android:src="@drawable/arrow_button_24" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/HeadingStyle"
+        android:layout_marginHorizontal="0dp"
+        android:text="@string/header_in_header" />
+
+    <EditText
+        android:id="@+id/search_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_in_header"
+        android:visibility="gone"
+        android:enabled="false"
+        android:layout_weight="1"
+        style="@style/HeadingStyle"
+        android:layout_marginHorizontal="0dp"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/cross_button"
+        style="@style/BUTTON_MINI"
+        android:visibility="gone"
+        android:enabled="false"
+        android:padding="0dp"
+        android:src="@drawable/cross_button_24" />
+
+    <ImageButton
+        android:id="@+id/filter_button"
+        style="@style/BUTTON_MINI"
+        android:visibility="gone"
+        android:enabled="false"
+        android:src="@drawable/filter_icon_24" />
+
+    <ImageButton
+        android:id="@+id/search_button"
+        style="@style/BUTTON_MINI"
+        android:src="@drawable/search_button_24" />
+
+</LinearLayout>

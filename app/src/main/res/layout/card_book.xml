@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Card_0"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_gravity="center"
+    android:layout_marginVertical="4dp"
+
+    app:cardBackgroundColor="?attr/colorSurface"
+
+    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+    app:cardElevation="0dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="4dp"
+        android:layout_gravity="center"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/ImageBook"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/NameBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/name_label"
+                    style="@style/CardHeadingStyle" />
+
+                <TextView
+                    android:id="@+id/DescriptionBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/description_label"
+                    style="@style/CardTextStyle" />
+            </LinearLayout>
+
+
+            <ImageButton
+                android:id="@+id/point_button"
+                style="@style/BUTTON_MINI"
+
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+
+                android:padding="4dp"
+
+                android:layout_marginHorizontal="0dp"
+                android:src="@drawable/point_menu_button_24" />
+
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

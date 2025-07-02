@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    style="@style/MarginApp"
+    tools:context=".RegisterActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/HEADER" >
+
+            <ImageButton
+                android:id="@+id/backButton"
+                style="@style/BUTTON_MINI"
+                android:src="@drawable/arrow_button_24" />
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+
+                <!-- Регистрация -->
+
+                <LinearLayout
+                    android:id="@+id/RegistrationLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="46dp"
+
+                    android:visibility="gone">
+
+                    <TextView
+                        android:text="@string/registration_label"
+                        style="@style/HeadingStyle"
+                        android:layout_width="wrap_content" />
+
+
+                    <EditText
+                        android:id="@+id/inputLogin"
+                        style="@style/EDIT_TEXT"
+                        android:hint="@string/login_label"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/inputName"
+                        style="@style/EDIT_TEXT"
+                        android:hint="@string/name_p_label"
+                        android:inputType="textPersonName" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/inputPassword"
+                            style="@style/EDIT_TEXT"
+                            android:hint="@string/password_label"
+                            android:inputType="textPassword" />
+                        <CheckBox
+                            android:id="@+id/password_show"
+                            android:layout_marginEnd="10dp"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/inputEmail"
+                        style="@style/EDIT_TEXT"
+                        android:hint="@string/email_label"
+                        android:inputType="textEmailAddress" />
+
+
+                    <TextView
+                        android:id="@+id/AuthorizationLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/i_already_have_an_account_label"
+                        style="@style/CardHeadingStyle"
+                        android:layout_marginTop="20dp" />
+
+                    <Button
+                        android:id="@+id/buttonRegistration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="36dp"
+                        android:layout_marginVertical="6dp"
+                        style="@style/CardHeadingStyle"
+                        android:text="@string/register_label" />
+
+                </LinearLayout>
+
+
+
+                <!-- Авторизация -->
+
+                <LinearLayout
+                    android:id="@+id/AuthorizationLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="46dp">
+
+                    <TextView
+                        android:text="@string/authorization_label"
+                        style="@style/HeadingStyle"
+                        android:layout_width="wrap_content" />
+
+
+                    <EditText
+                        android:id="@+id/inputLoginA"
+                        style="@style/EDIT_TEXT"
+                        android:hint="@string/login_label"
+                        android:inputType="text" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/inputPasswordA"
+                            style="@style/EDIT_TEXT"
+                            android:hint="@string/password_label"
+                            android:inputType="textPassword" />
+                        <CheckBox
+                            android:id="@+id/password_show_a"
+                            android:layout_marginEnd="10dp"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/RegistrationLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/CardHeadingStyle"
+                        android:text="@string/i_dont_have_an_account_label"
+                        android:layout_marginTop="20dp" />
+
+                    <Button
+                        android:id="@+id/buttonAuthorization"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="36dp"
+                        android:layout_marginVertical="6dp"
+                        style="@style/CardHeadingStyle"
+                        android:text="@string/login_in_label" />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
